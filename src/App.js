@@ -10,9 +10,10 @@ const App = () => {
   const [error, setError] = useState(null);
   const [isLoading, updateIsLoading] = useState(true)
   const recordsPerPage = 5;
-  let apiCalled = false;
 
   useEffect(() => {
+    let apiCalled = false;
+
     const fetchProjects = async () => {
       apiCalled = true;
       try {
