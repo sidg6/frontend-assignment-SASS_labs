@@ -12,10 +12,7 @@ const App = () => {
   const recordsPerPage = 5;
 
   useEffect(() => {
-    let apiCalled = false;
-
     const fetchProjects = async () => {
-      apiCalled = true;
       try {
         const response = await fetch(
           "https://raw.githubusercontent.com/saaslabsco/frontend-assignment/refs/heads/master/frontend-assignment.json"
@@ -39,9 +36,7 @@ const App = () => {
       updateIsLoading(false)
 
     };
-    if (!apiCalled) {
-      fetchProjects();
-    }
+    fetchProjects();
 
   }, []);
 
