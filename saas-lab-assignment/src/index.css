@@ -1,0 +1,14 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.error {
+  color: red;
+  margin: 20px;
+}
